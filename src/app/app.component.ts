@@ -17,7 +17,7 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'Fornecedores',
+      title: 'Produtos',
       url: 'produtos',
       icon: 'md-appstore'
     },
