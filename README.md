@@ -23,6 +23,8 @@ Victor Manoel
 Flavius Moraes
 Ivan Rodrigues
 
+# 18/09/2019
+
 CLASS produto
 
 ATR: NOME, MODELO, FABRICANTE,  ESTADO, NR SERIE,  PREÇO
