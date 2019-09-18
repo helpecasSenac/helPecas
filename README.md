@@ -7,7 +7,7 @@ O HelPeças é um aplicativo híbrido que tem como objetivo indicar a melhor loj
 
 edit: O HelPeças é um aplicativo híbrido que tem como objetivo apontar a melhor loja e/ou assistência técnica para a manutenção de smartphones. Indica serviços e peças disponíveis para suprir a necessidade do cliente.
 
-#16/09/2019
+# 16/09/2019
 
 Formem grupo de 5 pessoas;
 Tema do trabalho e os integrantes;
