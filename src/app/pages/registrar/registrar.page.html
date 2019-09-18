@@ -1,9 +1,13 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>registrar</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-
+<ion-content padding center text-center>
+  <ion-title>Registro</ion-title>
+  <ion-list>
+    <ion-item>
+      <ion-input placeholder="E-mail" type="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Senha" type="password"></ion-input>
+     </ion-item>
+  </ion-list>
+   
+  <ion-button color = primary expand="full" [routerLink]="['/login']">Voltar ao Login</ion-button>
 </ion-content>
