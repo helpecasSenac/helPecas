@@ -8,19 +8,19 @@ export class ClientesService {
 
   constructor(public firestore: AngularFirestore) { }
   criar(record){
-    return this.firestore.collection('Produtos').add(record);
+    return this.firestore.collection('Clientes').add(record);
    }
   
   listar(){
-    return this.firestore.collection('Produtos').snapshotChanges();
+    return this.firestore.collection('Clientes').snapshotChanges();
    }
   
   alterar(recordID, record){
-    return this.firestore.doc('Produtos/' + recordID).update(record);
+    return this.firestore.doc('Clientes/' + recordID).update(record);
    }
   
   excluir(recordID){
-    return this.firestore.doc('Produtos/' + recordID).delete();
+    return this.firestore.doc('Clientes/' + recordID).delete();
    } 
 }
 
