@@ -13,6 +13,7 @@ const routes: Routes = [
   { path: 'registrar', loadChildren: './pages/registrar/registrar.module#RegistrarPageModule' },
   { path: 'login', loadChildren: './pages/login/login.module#LoginPageModule' },
   { path: 'fornecedores', loadChildren: './pages/fornecedores/fornecedores.module#FornecedoresPageModule' },
+  { path: 'perfil', loadChildren: './pages/perfil/perfil.module#PerfilPageModule' },
 ];
 
 @NgModule({

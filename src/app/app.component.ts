@@ -22,9 +22,9 @@ export class AppComponent {
       icon: 'md-appstore'
     },
     {
-      title: 'Fornecedores',
-      url: 'fornecedores',
-      icon: 'ios-paper'
+      title: 'Perfil',
+      url: 'perfil',
+      icon: 'contact'
     },
     {
       title: 'Sobre',

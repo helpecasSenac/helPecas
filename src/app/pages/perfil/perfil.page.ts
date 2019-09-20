@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { ClientesService } from 'src/app/services/clientes.service';
 
 @Component({
-  selector: 'app-fornecedores',
-  templateUrl: './fornecedores.page.html',
-  styleUrls: ['./fornecedores.page.scss'],
+  selector: 'app-perfil',
+  templateUrl: './perfil.page.html',
+  styleUrls: ['./perfil.page.scss'],
 })
-export class FornecedoresPage implements OnInit {
+export class PerfilPage implements OnInit {
+  
   CNPJ: string;
   end: number;
   nomeFant: string;
