@@ -1,5 +1,6 @@
 import { Component, ViewChild, OnInit } from '@angular/core';
 import { NavController, IonSlides } from '@ionic/angular';
+import { MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-login',
@@ -13,7 +14,7 @@ export class LoginPage implements OnInit {
   email:string;
   senha:string;
 
-  constructor(public navCtrl: NavController) { }
+  constructor(public navCtrl: NavController,public menuCtrl: MenuController) { }
 
   ngOnInit(){}
     segmentChanged(event: any){
@@ -28,5 +29,9 @@ export class LoginPage implements OnInit {
     entrar(){
       console.log("E-mail: " + this.email);
       console.log("Senha: " + this.senha);
+    }
+
+    ionViewWillEnter(){
+      this.menuCtrl.enable(false);
     }
 }

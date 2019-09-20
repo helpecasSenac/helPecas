@@ -7,6 +7,10 @@ import { IonicModule } from '@ionic/angular';
 
 import { ProdutosPage } from './produtos.page';
 
+import { SearchPipe } from '../../pipes/search/search';
+import { SortPipe } from '../../pipes/sort/sort';
+
+
 const routes: Routes = [
   {
     path: '',
@@ -19,8 +23,9 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes), SearchPipe, SortPipe
   ],
-  declarations: [ProdutosPage]
+  providers:[ SearchPipe, SortPipe ],
+  declarations: [ProdutosPage, SearchPipe, SortPipe]
 })
 export class ProdutosPageModule {}

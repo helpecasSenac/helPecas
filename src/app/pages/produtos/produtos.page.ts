@@ -1,6 +1,10 @@
 import { ProdutosService } from './../../services/produtos.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgModule } from '@angular/core';
 
+import { SearchPipe } from '../../pipes/search/search';
+import { SortPipe } from '../../pipes/sort/sort';
+
+@NgModule({})
 @Component({
   selector: 'app-produtos',
   templateUrl: './produtos.page.html',
@@ -17,10 +21,12 @@ export class ProdutosPage implements OnInit {
   descending: boolean = false;
   order: number;
   column: string = 'name';
+
+  terms: any;
   
   produto:any;
 
-  constructor(private ProSer: ProdutosService) { }
+  constructor(private ProSer: ProdutosService, private search: SearchPipe) { }
 
   ngOnInit() {
     this.ProSer.listar().subscribe(data => {
@@ -33,7 +39,7 @@ export class ProdutosPage implements OnInit {
           modelo: e.payload.doc.data()['modelo'],
           nome: e.payload.doc.data()['nome'],
           nr_serie: e.payload.doc.data()['nr_serie'],
-          preco: e.payload.doc.data()['preco'],
+          preco: e.payload.doc.data()['prPipeeco'],
       
       };
       })
