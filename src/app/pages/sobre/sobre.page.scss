@@ -1,21 +1,21 @@
 ion-toolbar{
     --background:#bf3b2a;
-    color: white;
+    color:white;
 }
 
 ion-menu-button{
-    --color:blue;
+    --color:white;
 }
 
 ion-title{
     font-size: 30px;
 }
 
-ion-content{
-    --background:#286eb8;
+.ion-text-center{
+    text-align: center	;
 }
-label{
-    text-align: center;
+
+ion-label{
     color: black;
     font-size: 50px;
 }
@@ -27,7 +27,6 @@ p{
 }
 
 h2{
-    text-align: center;
     padding-left: 10px;
     padding-right: 10px;
 }
