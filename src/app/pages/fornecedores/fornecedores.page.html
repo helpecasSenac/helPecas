@@ -1,9 +1,19 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>fornecedores</ion-title>
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Fornecedores</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-list>
+      <ion-card *ngFor="let item of fornecedores">
+        <label>Nome Fantasia: {{item.nomeFant}}</label><br>
+        <label>CNPJ: {{item.CNPJ}}</label><br>
+        <label>Endereço: {{item.end}}</label><br>
+        <label>Telefone: {{item.tel}}</label><br>
+      </ion-card>
+  </ion-list>
 </ion-content>

@@ -14,13 +14,13 @@ export class ProdutosPage implements OnInit {
   nr_serie: number;
   preco: number;
   
-  pro:any;
+  produto:any;
 
   constructor(private ProSer: ProdutosService) { }
 
   ngOnInit() {
     this.ProSer.listar().subscribe(data => {
-      this.pro = data.map(e => {
+      this.produto = data.map(e => {
         return{
           id: e.payload.doc.id,
           isEdit: false,
@@ -33,7 +33,7 @@ export class ProdutosPage implements OnInit {
       
       };
       })
-      console.log(this.pro);
+      console.log(this.produto);
         });
   }
   /* 
