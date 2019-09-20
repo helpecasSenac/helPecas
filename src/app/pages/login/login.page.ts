@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ViewChild, OnInit } from '@angular/core';
+import { NavController, IonSlides } from '@ionic/angular';
 
 @Component({
   selector: 'app-login',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPage implements OnInit {
 
-  constructor() { }
+  @ViewChild(IonSlides,{ static: true }) slides: IonSlides;
+  
+  email:string;
+  senha:string;
 
-  ngOnInit() {
-  }
+  constructor(public navCtrl: NavController) { }
 
+  ngOnInit(){}
+    segmentChanged(event: any){
+      if(event.detail.value === "login") {
+        this.slides.slidePrev();
+      }
+      else{
+        this.slides.slideNext();
+      }
+    }
+    
+    entrar(){
+      console.log("E-mail: " + this.email);
+      console.log("Senha: " + this.senha);
+    }
 }

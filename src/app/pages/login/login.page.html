@@ -1,19 +1,88 @@
 <ion-content padding center text-center>
-  <ion-title>Faça Login</ion-title>
-  <ion-img src="assets/img/AppLogo.png"></ion-img>
-   <ion-list>
-     <ion-item>
-       <ion-input placeholder="E-mail" type="email"></ion-input>
-    </ion-item>
-    <ion-item>
-        <ion-input placeholder="Senha" type="password"></ion-input>
-     </ion-item>
-   </ion-list>
-   
-   <ion-button color = primary expand="full" [routerLink]="['/registrar']">Registrar</ion-button>
-   
-   
-   <!--
-   <ion-button color = danger expand="full" (click)="entrar()">Entrar</ion-button>
-   --> 
+  <div class="container">
+        <ion-img src="assets/img/AppLogo.png"></ion-img>
+  
+        <ion-segment (ionChange)="segmentChanged($event)">
+              <ion-segment-button value="login">
+                <ion-label>Login</ion-label>
+              </ion-segment-button>
+              <ion-segment-button value="cadastro">
+                <ion-label>Cadastro</ion-label>
+              </ion-segment-button>
+            </ion-segment>
+  </div>
+    <ion-slides>
+      <ion-slide>
+      
+           <ion-content padding center text-center>
+  
+                 <ion-title>Faça Login</ion-title>
+                
+  
+                  <ion-list>
+  
+                    <ion-item class=ion-margin-top lines="none">
+                      <ion-input placeholder="E-mail" type="email"></ion-input>
+                   </ion-item>
+  
+                   <ion-item class=ion-margin-top lines="none">
+                       <ion-input placeholder="Senha" type="password"></ion-input>
+                    </ion-item>
+  
+                  </ion-list>
+  
+                  <ion-button class=ion-margin-top color = danger expand="full" (click)="entrar()">Entrar</ion-button>
+  
+                  <div class="container ion-text-center">
+                  
+                 </div>
+  
+           </ion-content>
+      </ion-slide>
+  
+      <ion-slide>
+  
+           <ion-content padding center text-center>
+  
+                 <ion-title>Cadastre-se</ion-title>
+           
+             <ion-list>
+  
+                 <ion-item class=ion-margin-top lines="none">
+              <ion-input placeholder="E-mail" type="email"></ion-input>
+              </ion-item>
+  
+              <ion-item class=ion-margin-top lines="none">
+                  <ion-input placeholder="Senha" type="password"></ion-input>
+               </ion-item>
+  
+               <ion-item class=ion-margin-top lines="none">
+                  <ion-input placeholder="Confirmação de Senha" type="rpassword"></ion-input>
+               </ion-item>
+  
+               <br><br>
+  
+               <ion-item class=ion-margin-top lines="none">
+                  <ion-input placeholder="CNPJ" type="rpassword"></ion-input>
+               </ion-item>
+  
+               <ion-item class=ion-margin-top lines="none">
+                  <ion-input placeholder="Nome Fantasia" type="rpassword"></ion-input>
+               </ion-item>
+  
+               <ion-item class=ion-margin-top lines="none">
+                  <ion-input placeholder="Endereço" type="rpassword"></ion-input>
+               </ion-item>
+  
+               <ion-item class=ion-margin-top lines="none">
+                  <ion-input placeholder="Telefone" type="rpassword"></ion-input>
+               </ion-item>
+  
+             </ion-list>
+           
+             <ion-button class=ion-margin-top color = danger expand="full" (click)="cadastrar()">Cadastrar</ion-button>
+           </ion-content>
+        </ion-slide>
+  
+    </ion-slides>
   </ion-content>

@@ -1,7 +1,24 @@
-page-home {
-    ion-title *{
-        margin-top: 30vh;
-        margin-bottom: 5vh;
-    }
+ion-slides{
+    height: 100%;
+}
 
+ion-item{
+
+--background: rgba(82,126,245);
+--border-radius: 10px;
+}
+
+ion-input{
+
+--color: #fff;
+
+}
+
+.span{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+    width: 70%;
+    margin: 0 auto;
 }
