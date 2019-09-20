@@ -16,12 +16,11 @@ import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 //importações SEARCHBAR
-import { SearchPipe } from './pipes/search.pipe';
-import { SortPipe } from './pipes/sort.pipe';
-
+import { SearchPipe } from './pipes/search/search';
+import { SortPipe } from './pipes/sort/sort';
 
 @NgModule({
-  declarations: [AppComponent, SearchPipe, SortPipe],
+  declarations: [AppComponent, SearchPipe, SortPipe ],
   entryComponents: [],
   imports: [
     BrowserModule,

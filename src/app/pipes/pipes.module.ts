@@ -1,14 +1,12 @@
-import { SortPipe } from './sort.pipe';
-import { SearchPipe } from './search.pipe';
+ 
 import { NgModule } from '@angular/core';
+import { SearchPipe } from '../pipes/search/search';
+import { SortPipe } from '../pipes/sort/sort';
 
 @NgModule({
 	declarations: [SearchPipe,
     SortPipe],
-	imports: [
-		SearchPipe,
-    	SortPipe
-	],
+	imports: [],
 	exports: [SearchPipe,
     SortPipe]
 })
