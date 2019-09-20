@@ -22,5 +22,9 @@ export class ProdutosService {
   
   excluir(recordID){
     return this.firestore.doc('Produtos/' + recordID).delete();
-   } 
+   }
+   
+  //OUTROS
+
+  
 }

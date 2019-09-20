@@ -13,6 +13,10 @@ export class ProdutosPage implements OnInit {
   nome: string;
   nr_serie: number;
   preco: number;
+
+  descending: boolean = false;
+  order: number;
+  column: string = 'name';
   
   produto:any;
 
@@ -34,8 +38,18 @@ export class ProdutosPage implements OnInit {
       };
       })
       console.log(this.produto);
-        });
+      });
+      
+      //BUSCA
+
   }
+  
+  //BUSCA
+  sort(){
+    this.descending = !this.descending;
+    this.order = this.descending ? 1 : -1;
+  }
+
   /* 
   removerRegistro(rowID) {
     console.log(rowID);
