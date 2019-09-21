@@ -29,6 +29,7 @@ import { SortPipe } from './pipes/sort/sort';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireDatabaseModule,
+    
   ],
   providers: [
     StatusBar,

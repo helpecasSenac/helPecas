@@ -4,7 +4,7 @@ import { Component, OnInit, NgModule } from '@angular/core';
 import { SearchPipe } from '../../pipes/search/search';
 import { SortPipe } from '../../pipes/sort/sort';
 
-@NgModule({})
+
 @Component({
   selector: 'app-produtos',
   templateUrl: './produtos.page.html',

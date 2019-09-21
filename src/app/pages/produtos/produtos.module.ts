@@ -1,3 +1,4 @@
+import { PipesModule } from './../../pipes/pipes.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -23,9 +24,9 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes), SearchPipe, SortPipe
+    RouterModule.forChild(routes), 
   ],
-  providers:[ SearchPipe, SortPipe ],
-  declarations: [ProdutosPage, SearchPipe, SortPipe]
+  providers:[  ],
+  declarations: [ProdutosPage]
 })
 export class ProdutosPageModule {}

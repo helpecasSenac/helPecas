@@ -11,8 +11,8 @@
         </ion-segment>
     </div>
     <ion-slides>
-        <ion-slide>
-            <ion-content padding center text-center>
+        <ion-slide class="slide1">
+            <ion-content padding center text-center class="slide1">
                 <ion-title>Faça Login</ion-title>
                 <ion-list>
                     <ion-item class=ion-margin-top lines="none">
@@ -22,10 +22,10 @@
                         <ion-input placeholder="Senha" type="password"></ion-input>
                     </ion-item>
                 </ion-list>
-                <ion-button class=ion-margin-top color=d anger expand="full" (click)="entrar()">Entrar</ion-button>
+                <ion-button class=ion-margin-top color=danger expand="full" (click)="entrar()">Entrar</ion-button>
             </ion-content>
         </ion-slide>
-        <ion-slide>
+        <ion-slide class="slide2">
             <ion-list>
                 <ion-title>Cadastre-se</ion-title>
                 <ion-item class=ion-margin-top lines="none">
@@ -55,10 +55,8 @@
                 <ion-item class=ion-margin-top lines="none">
                     <ion-input placeholder="Telefone" type="rpassword"></ion-input>
                 </ion-item>
+                <ion-button class=ion-margin-top color=danger expand="full">Cadastrar</ion-button>
             </ion-list>
-            <!--
-            <ion-button class=ion-margin-top color = danger expand="full" (click)="cadastrar()">Cadastrar</ion-button>
-         -->
         </ion-slide>
     </ion-slides>
 </ion-content>

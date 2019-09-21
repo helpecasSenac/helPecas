@@ -1,17 +1,23 @@
-ion-slides{
-    height: 100%;
+ion-slides {
+    height: 570px;
+    width: 100%;
 }
 
-ion-item{
-    --background: rgba(82,126,245);
+.slide2 {
+    height: 550px;
+    width: 100%;
+}
+
+ion-item {
+    --background: rgba(82, 126, 245);
     --border-radius: 10px;
 }
 
-ion-input{
+ion-input {
     --color: #fff;
 }
 
-.span{
+.span {
     position: absolute;
     left: 0;
     right: 0;
