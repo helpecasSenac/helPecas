@@ -8,21 +8,11 @@
 </ion-header>
 <ion-content>
     <ion-list>
-        <ion-item>Nome do Produto: {{ !!produtos?.nome }}</ion-item>
-        <ion-item>Estado do Produto: {{ !!produtos?.estado }}</ion-item>
-        <ion-item>Fabricante do Produto: {{ !!produtos?.fabricante }}</ion-item>
-        <ion-item>Modelo do Produto: {{ !!produtos?.modelo }}</ion-item>
-        <ion-item>Número de Série: {{ !!produtos?.nr_serie }}</ion-item>
-        <ion-item>Preço do Produto: {{ !!produtos?.preco }}</ion-item>
+        <ion-item>Nome do Produto: {{ produtos?.nome }}</ion-item>
+        <ion-item>Estado do Produto: {{ produtos?.estado }}</ion-item>
+        <ion-item>Fabricante do Produto: {{ produtos?.fabricante }}</ion-item>
+        <ion-item>Modelo do Produto: {{ produtos?.modelo }}</ion-item>
+        <ion-item>Número de Série: {{ produtos?.nr_serie }}</ion-item>
+        <ion-item>Preço do Produto: {{ produtos?.preco }}</ion-item>
     </ion-list>
-    <!--
-    <ion-item>
-        <label>Nome do Produto: {{ produtos?.nome }}</label><br>
-        <label>Estado do Produto: {{ produtos?.estado }}</label><br>
-        <label>Fabricante do Produto: {{ produtos?.fabricante }}</label><br>
-        <label>Modelo do Produto: {{ produtos?.modelo }}</label><br>
-        <label>Número de Série: {{ produtos?.nr_serie }}</label><br>
-        <label>Preço do Produto: {{ produtos?.preco }}</label><br>
-    </ion-item>
-    -->
 </ion-content>
