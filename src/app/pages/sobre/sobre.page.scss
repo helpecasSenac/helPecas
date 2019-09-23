@@ -1,37 +1,40 @@
-ion-toolbar{
-    --background:#bf3b2a;
-    color:white;
+ion-toolbar {
+    --background: #bf3b2a;
+    color: white;
 }
 
-ion-menu-button{
-    --color:white;
+ion-menu-button {
+    --color: white;
 }
 
-ion-title{
+ion-title {
     font-size: 30px;
 }
 
-.ion-text-center{
-    text-align: center	;
+.ion-text-center {
+    text-align: center;
 }
 
-ion-label{
+ion-label {
     color: black;
     font-size: 50px;
 }
 
-p{
+p {
     font-size: 20px;
     padding-left: 10px;
     padding-right: 10px;
 }
 
-h2{
+h2 {
     padding-left: 10px;
     padding-right: 10px;
 }
 
-img{
-    width: 1000px;
-    margin-left: 0px;
+img {
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
