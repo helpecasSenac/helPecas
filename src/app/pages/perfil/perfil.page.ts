@@ -19,7 +19,6 @@ export class PerfilPage implements OnInit {
   fornecedores:any;
 
   constructor(private CliSer: ClientesService) { }
-
   ngOnInit() {
     this.CliSer.listar().subscribe(data => {
       this.fornecedores = data.map(e => {
@@ -33,11 +32,10 @@ export class PerfilPage implements OnInit {
           razaoSoc: e.payload.doc.data()['razaoSoc'],
           tel: e.payload.doc.data()['tel'],
           user: e.payload.doc.data()['user'],
-      
       };
       })
       console.log(this.fornecedores);
         });
   }
-
+  
 }

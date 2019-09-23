@@ -6,14 +6,16 @@
       <ion-title>Perfil</ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content>
   <ion-list>
-      <ion-card *ngFor="let item of fornecedores">
-        <label>Nome Fantasia: {{item.nomeFant}}</label><br>
-        <label>CNPJ: {{item.CNPJ}}</label><br>
-        <label>Endereço: {{item.end}}</label><br>
-        <label>Telefone: {{item.tel}}</label><br>
-      </ion-card>
+    <div class="ion-text-center">
+      <ion-label >Meu Perfil</ion-label>
+    </div>
+    <ion-card *ngFor="let item of fornecedores">
+      <label>Nome Fantasia: {{item.nomeFant}}</label><br>
+      <label>CNPJ: {{item.CNPJ}}</label><br>
+      <label>Endereço: {{item.end}}</label><br>
+      <label>Telefone: {{item.tel}}</label><br>
+    </ion-card>
   </ion-list>
 </ion-content>
