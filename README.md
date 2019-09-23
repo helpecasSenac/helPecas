@@ -1,11 +1,15 @@
 # helPecas
 Turma 2018.1 - Senac Bonsucesso
 
-
-#HelPeças
-O HelPeças é um aplicativo híbrido que tem como objetivo indicar a melhor loja e/ou assistência técnica para a manutenção de smartphones. Indicando serviços e peças disponíveis para suprir a necessidade do cliente; facilitando a logística do mesmo.
-
-edit: O HelPeças é um aplicativo híbrido que tem como objetivo apontar a melhor loja e/ou assistência técnica para a manutenção de smartphones. Indica serviços e peças disponíveis para suprir a necessidade do cliente.
+Fundada no ano de 2019, com capacidade de atendimento, compromisso, inovação e
+confiabilidade.  Empresa criada por um grupo de alunos do Serviço Nacional de Aprendizagem
+Comercial (SENAC); A partir de uma necessidade de mercado no ramo de manutenção de
+celulares. Estamos em constante atualização e treinamento para melhor suprir e atender as
+necessidades de nossos clientes.
+O HelPeças é um aplicativo híbrido que tem por objetivo, atender com excelência visando a
+satisfação do cliente, oferecendo produtos de qualidade e que atendam suas necessidades e
+expectativas. Reunimos tecnologia e flexibilidade, oferecendo as melhores peças de grandes
+marcas líderes de mercado para atender as mais diversas necessidades de nossos clientes.
 
 # 16/09/2019
 
