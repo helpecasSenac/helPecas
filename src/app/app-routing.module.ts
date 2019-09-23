@@ -14,6 +14,7 @@ const routes: Routes = [
   { path: 'login', loadChildren: './pages/login/login.module#LoginPageModule' },
   { path: 'perfil', loadChildren: './pages/perfil/perfil.module#PerfilPageModule' },
   { path: 'edicao-produto', loadChildren: './pages/edicao-produto/edicao-produto.module#EdicaoProdutoPageModule' },
+  { path: 'edicao-produto/:id', loadChildren: './pages/edicao-produto/edicao-produto.module#EdicaoProdutoPageModule' },
 ];
 
 @NgModule({

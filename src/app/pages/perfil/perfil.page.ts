@@ -11,10 +11,8 @@ export class PerfilPage implements OnInit {
   CNPJ: string;
   end: number;
   nomeFant: string;
-  pass: string;
   razaoSoc: string;
   tel: string;
-  user: string;
   
   fornecedores:any;
 
@@ -28,11 +26,9 @@ export class PerfilPage implements OnInit {
           CNPJ: e.payload.doc.data()['CNPJ'],
           end: e.payload.doc.data()['end'],
           nomeFant: e.payload.doc.data()['nomeFant'],
-          pass: e.payload.doc.data()['pass'],
           razaoSoc: e.payload.doc.data()['razaoSoc'],
           tel: e.payload.doc.data()['tel'],
-          user: e.payload.doc.data()['user'],
-      };
+        };
       })
       console.log(this.fornecedores);
         });

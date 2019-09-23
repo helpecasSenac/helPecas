@@ -4,10 +4,6 @@
             <ion-menu-button></ion-menu-button>
         </ion-buttons>
         <ion-title>Produtos</ion-title>
-        <ion-searchbar [(ngModel)]="terms">
-            <ion-button color="primary" (click)="sort()">Sort</ion-button>
-        </ion-searchbar>
-
     </ion-toolbar>
 </ion-header>
 <!--
@@ -15,9 +11,8 @@
     | search : terms | sort: {property: column, order: order}
 -->
 <ion-content>
-
     <ion-list>
-        <ion-item *ngFor="let item of produto">
+        <ion-item *ngFor="let item of produto" [routerLink]="['/edicao-produto', item.id]">
             {{item.nome}}
         </ion-item>
     </ion-list>

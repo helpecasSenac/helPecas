@@ -1,8 +1,8 @@
 import { ProdutosService } from './../../services/produtos.service';
 import { Component, OnInit, NgModule } from '@angular/core';
 
-import { SearchPipe } from '../../pipes/search/search';
-import { SortPipe } from '../../pipes/sort/sort';
+//import { SearchPipe } from '../../pipes/search/search';
+//import { SortPipe } from '../../pipes/sort/sort';
 
 
 @Component({
@@ -17,16 +17,10 @@ export class ProdutosPage implements OnInit {
   nome: string;
   nr_serie: number;
   preco: number;
-
-  descending: boolean = false;
-  order: number;
-  column: string = 'name';
-
-  terms: any;
   
   produto:any;
 
-  constructor(private ProSer: ProdutosService, private search: SearchPipe) { }
+  constructor(private ProSer: ProdutosService) { }
 
   ngOnInit() {
     this.ProSer.listar().subscribe(data => {
@@ -45,16 +39,17 @@ export class ProdutosPage implements OnInit {
       })
       console.log(this.produto);
       });
-      
-      //BUSCA
-
   }
   
+  
+  /*
   //BUSCA
   sort(){
     this.descending = !this.descending;
     this.order = this.descending ? 1 : -1;
   }
+  */
+ 
 
   /* 
   removerRegistro(rowID) {
