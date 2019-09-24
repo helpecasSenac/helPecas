@@ -14,11 +14,11 @@ expectativas. Reunimos tecnologia e flexibilidade, oferecendo as melhores peças
 marcas líderes de mercado para atender as mais diversas necessidades de nossos clientes.
 
 # Desenvolvedores do Projeto
-Antonio Lima
-Igor Lopes 
-Victor Manoel
-Flavius Moraes
-Ivan Rodrigues
+- Antonio Lima
+- Igor Lopes 
+- Victor Manoel
+- Flavius Moraes
+- Ivan Rodrigues
 
 # CLASSE E ATRIBUTOS
 CLASS produto
