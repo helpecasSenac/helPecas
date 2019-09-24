@@ -1,4 +1,6 @@
-<center># helPecas</center>
+<p align="center" style="font-size:30px">
+# helPecas
+</p>
 <p align="center">
 <img src="/src/assets/img/AppLogo(fundoClaro)2.png" width="300px"><br>
 Turma 2018.1 - Senac Bonsucesso
