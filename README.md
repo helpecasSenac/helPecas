@@ -2,7 +2,7 @@
 <img src="/src/assets/img/AppLogo(fundoClaro)2.png" width="300px"><br>
 Turma 2018.1 - Senac Bonsucesso
 </p>
-# Historia
+# Historia<br>
 Fundada no ano de 2019, com capacidade de atendimento, compromisso, inovação e
 confiabilidade.  Empresa criada por um grupo de alunos do Serviço Nacional de Aprendizagem
 Comercial (SENAC); A partir de uma necessidade de mercado no ramo de manutenção de
@@ -21,14 +21,26 @@ marcas líderes de mercado para atender as mais diversas necessidades de nossos 
 - Ivan Rodrigues
 
 # CLASSE E ATRIBUTOS
-CLASS produto
 
-ATR: NOME, MODELO, FABRICANTE,  ESTADO, NR SERIE,  PREÇO
+CLASSE (PRODUTOS)
+Atributos
 
-CLASS clientes
+Nome = String
+Modelo = String
+Fabricante = String
+Estado = String
+Nr Serie = Number
+Preço = Number
 
-ATR: nomeFant, razãoSoc, cnpj, end, tel, user, pass
+CLASSE (CLIENTES)
+Atributos
 
-# LINKS
+nomeFant = String
+razaoSoc = String
+CNPJ = Number
+End = String
+Teln = Number
+
+# LINKS EXTERNOS
 
 https://rogerdudler.github.io/git-guide/index.pt_BR.html
