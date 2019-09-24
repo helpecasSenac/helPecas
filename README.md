@@ -1,6 +1,6 @@
 # helPecas
-![](/assets/img/AppLogo(fundoClaro)2.png)
-<img src="/assets/img/AppLogo(fundoClaro)2.png">
+![](/src/assets/img/AppLogo(fundoClaro)2.png)
+<img src="/src/assets/img/AppLogo(fundoClaro)2.png">
 Turma 2018.1 - Senac Bonsucesso
 
 Fundada no ano de 2019, com capacidade de atendimento, compromisso, inovação e
