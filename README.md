@@ -1,7 +1,8 @@
 <center># helPecas</center>
+<p align="center">
 <img src="/src/assets/img/AppLogo(fundoClaro)2.png" width="300px">
 Turma 2018.1 - Senac Bonsucesso
-
+</p>
 Fundada no ano de 2019, com capacidade de atendimento, compromisso, inovação e
 confiabilidade.  Empresa criada por um grupo de alunos do Serviço Nacional de Aprendizagem
 Comercial (SENAC); A partir de uma necessidade de mercado no ramo de manutenção de
