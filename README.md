@@ -1,5 +1,5 @@
-<p align="center" style="font-size:30px">
-# helPecas
+<p align="center" style="font-size:100px">
+helPecas
 </p>
 <p align="center">
 <img src="/src/assets/img/AppLogo(fundoClaro)2.png" width="300px"><br>
