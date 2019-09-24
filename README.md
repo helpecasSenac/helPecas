@@ -24,6 +24,16 @@ marcas líderes de mercado para atender as mais diversas necessidades de nossos 
 
 # CLASSE E ATRIBUTOS
 
+| Clientes |
+| --- | --- |
+| Nome | String |
+| Modelo | String |
+| Fabricante | String |
+| Estado | String |
+| Nr_Serie | String |
+| Preco | Number |
+
+
 | Produtos | Clientes |
 | ------------- | ------------- |
 | Nome  | Content Cell  |
