@@ -11,7 +11,7 @@ import { AngularFirestore } from '@angular/fire/firestore';
 export class PaginaInicialPage implements OnInit {
 
   constructor(public menuCtrl: MenuController,private afa: AngularFireAuth, 
-    public firestore: AngularFirestore,) { }
+    public firestore: AngularFirestore) { }
 
   ngOnInit() {
   }

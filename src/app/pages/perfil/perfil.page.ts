@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ClientesService } from 'src/app/services/clientes.service';
+import { AngularFireAuth } from '@angular/fire/auth';
+import { AngularFirestore } from '@angular/fire/firestore';
 
 @Component({
   selector: 'app-perfil',
@@ -16,7 +18,9 @@ export class PerfilPage implements OnInit {
   
   fornecedores:any;
 
-  constructor(private CliSer: ClientesService) { }
+  constructor(private CliSer: ClientesService,
+    private afa: AngularFireAuth, 
+    public firestore: AngularFirestore) { }
   ngOnInit() {
     this.CliSer.listar().subscribe(data => {
       this.fornecedores = data.map(e => {
@@ -59,6 +63,10 @@ export class PerfilPage implements OnInit {
     record['tel'] = recordRow.EditTel;
     this.CliSer.alterar(recordRow.id, record);
     recordRow.isEdit = false;
+  }
+
+  logout() {
+    this.afa.auth.signOut();
   }
   
 }
