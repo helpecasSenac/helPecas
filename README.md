@@ -34,10 +34,11 @@ marcas líderes de mercado para atender as mais diversas necessidades de nossos 
 | Preco | Number |
 
 
-| Produtos | Clientes |
+| Produtos | |
 | ------------- | ------------- |
-| Nome  | Content Cell  |
-| Modelo  | Content Cell  |
+| Nome  | String  |
+| Modelo  | String  |
+| Fabricante  | String  |
 
 CLASSE (PRODUTOS)
 Atributos
