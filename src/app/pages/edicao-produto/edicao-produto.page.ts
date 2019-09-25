@@ -20,7 +20,7 @@ export class EdicaoProdutoPage implements OnInit {
   id = null;
   produtos: {};
 
-  constructor(    private route: ActivatedRoute, 
+  constructor(private route: ActivatedRoute, 
     private nav: NavController, 
     private produtoSer: ProdutosService) { }
 

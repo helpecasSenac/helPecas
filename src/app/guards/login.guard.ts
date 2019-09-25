@@ -16,7 +16,7 @@ export class LoginGuard implements CanActivate  {
 return new Promise(resolve =>{
 this.authService.getAuth().onAuthStateChanged(user =>{
   // tslint:disable-next-line: curly
-  if (user) this.router.navigate(['home']);
+  if (user) this.router.navigate(['pagina-inicial']);
 
   // tslint:disable-next-line: semicolon
   resolve(!user ? true : false)
