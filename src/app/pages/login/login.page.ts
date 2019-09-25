@@ -5,6 +5,7 @@ import { LoadingController, ToastController } from '@ionic/angular';
 import { User } from '../../services/interfaces/user';
 import { registerLocaleData } from '@angular/common';
 import { AuthService } from '../../services/auth.service';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.page.html',
@@ -24,8 +25,11 @@ export class LoginPage implements OnInit {
   endereco: string;
   telefone: string;
 
-  constructor( public navCtrl: NavController,public loadingCtrl: LoadingController,
-    private toastCtrl: ToastController,private authService: AuthService) {
+  constructor( public navCtrl: NavController,
+    public loadingCtrl: LoadingController,
+    private toastCtrl: ToastController,
+    private authService: AuthService, 
+    public menuCtrl: MenuController) {
   }
 
   ngOnInit(){}
@@ -119,6 +123,10 @@ async presentToast(message: string) {
     duration: 2000
   });
   toast.present();
+}
+
+ionViewWillEnter(){
+  this.menuCtrl.enable(false);
 }
   
 }

@@ -15,12 +15,14 @@ export class LoginGuard implements CanActivate  {
   canActivate(): Promise<boolean> {
 return new Promise(resolve =>{
 this.authService.getAuth().onAuthStateChanged(user =>{
+  // tslint:disable-next-line: curly
   if (user) this.router.navigate(['home']);
 
+  // tslint:disable-next-line: semicolon
   resolve(!user ? true : false)
+// tslint:disable-next-line: semicolon
 })
 });
   }
   }
 
- 

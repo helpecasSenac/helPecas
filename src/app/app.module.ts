@@ -14,6 +14,7 @@ import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 
 //importações SEARCHBAR
 import { SearchPipe } from './pipes/search/search';
@@ -29,7 +30,7 @@ import { SortPipe } from './pipes/sort/sort';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireDatabaseModule,
-    
+    AngularFireAuthModule,    
   ],
   providers: [
     StatusBar,
