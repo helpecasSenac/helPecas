@@ -23,41 +23,24 @@ marcas líderes de mercado para atender as mais diversas necessidades de nossos 
 - Ivan Rodrigues
 
 # CLASSE E ATRIBUTOS
+# CLASSE (CLIENTES)
+| Clientes | |
+| ------------- | ------------- |
+| nomeFant | String |
+| razaoSoc | String |
+| CNPJ | String |
+| end | String |
+| tel | Number |
 
-| Clientes |
-| --- | --- |
-| Nome | String |
-| Modelo | String |
-| Fabricante | String |
-| Estado | String |
-| Nr_Serie | String |
-| Preco | Number |
-
-
+# CLASSE (PRODUTOS)
 | Produtos | |
 | ------------- | ------------- |
 | Nome  | String  |
 | Modelo  | String  |
 | Fabricante  | String  |
-
-CLASSE (PRODUTOS)
-Atributos
-
-Nome = String
-Modelo = String
-Fabricante = String
-Estado = String
-Nr Serie = Number
-Preço = Number
-
-CLASSE (CLIENTES)
-Atributos
-
-nomeFant = String
-razaoSoc = String
-CNPJ = Number
-End = String
-Teln = Number
+| Estado | String |
+| Nr_Serie | String |
+| Preco | Number |
 
 # LINKS EXTERNOS
 
