@@ -1,3 +1,4 @@
+<!--
 <ion-header>
   <ion-toolbar>
       <ion-buttons slot="start">
@@ -11,11 +12,201 @@
     <div class="ion-text-center">
       <ion-label >Meu Perfil</ion-label>
     </div>
+    <span *ngIf="!item.isEdit; else elseBlock">
     <ion-card *ngFor="let item of fornecedores">
+    
       <label>Nome Fantasia: {{item.nomeFant}}</label><br>
       <label>CNPJ: {{item.CNPJ}}</label><br>
       <label>Endereço: {{item.end}}</label><br>
       <label>Telefone: {{item.tel}}</label><br>
     </ion-card>
   </ion-list>
+
+  <ion-button shape="round" color="secondary" size="small"
+  (click)="editarRegistro(item.nomeFant)">
+      <ion-icon size="small" slot="icon-only" name="create"></ion-icon>
+  </ion-button>
+
+  <ion-button shape="round" color="danger" size="small"
+  (click)="removerRegistro(item.id)">
+      <ion-icon size="small" slot="icon-only" name="trash"></ion-icon>
+  </ion-button>
+</span>
+  <ng-template #elseBlock>
+      <ion-card-header>
+        <ion-card-title>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                Editar
+              </ion-col>
+              <ion-col>
+                <ion-button fill="clear" color="medium" size="small" (click)="item.isEdit = false">
+                  Cancelar
+                </ion-button>
+              </ion-col>
+              <ion-col>
+                <ion-button fill="outline" color="success" size="small" (click)="atualizarRegistro(item)">
+                  Salvar                                                          
+                </ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-label><strong>Nome</strong></ion-label>
+          <ion-input type="text" [(ngModel)]="item.EditNome"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label><strong>Idade</strong></ion-label>
+          <ion-input type="text" [(ngModel)]="item.EditIdade"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label><strong>Cidade</strong></ion-label>
+          <ion-input type="text" [(ngModel)]="item.EditCidade"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label><strong>E-mail</strong></ion-label>
+            <ion-input type="text" [(ngModel)]="item.EditEmail"></ion-input>
+        </ion-item>
+  
+      </ion-card-content>
+  
+  </ng-template>
+
+
 </ion-content>
+-->
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+    Contatos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<!--
+  <ion-grid fixed>
+
+    <ion-row>
+      <ion-col>
+      <ion-item>
+<ion-input placeholder="Nome" [(ngModel)]="nome"></ion-input>
+      </ion-item>
+    </ion-col>    
+    </ion-row>
+
+        <ion-row>
+          <ion-col>
+          <ion-item>
+    <ion-input placeholder="Idade" [(ngModel)]="idade"></ion-input>
+          </ion-item>
+        </ion-col>    
+        </ion-row>
+        
+        
+            <ion-row>
+              <ion-col>
+              <ion-item>
+        <ion-input placeholder="E-mail" [(ngModel)]="email"></ion-input>
+              </ion-item>
+            </ion-col>    
+            </ion-row>
+           
+           
+                <ion-row>
+                <ion-col>
+                  <ion-item>
+            <ion-input placeholder="Cidade" [(ngModel)]="cidade"></ion-input>
+                  </ion-item>
+                </ion-col>    
+                </ion-row>
+</ion-grid>
+-->
+<ion-card *ngFor="let item of fornecedores">
+  <span *ngIf="!item.isEdit; else elseBlock">
+    <ion-card-header>
+      <ion-card>
+        <label>Nome Fantasia: {{item.nomeFant}}</label><br>
+        <label>CNPJ: {{item.CNPJ}}</label><br>
+        <label>Endereço: {{item.end}}</label><br>
+        <label>Telefone: {{item.tel}}</label><br>
+      </ion-card>
+    </ion-card-header>
+
+<ion-card-content>
+
+<ion-button shape="round" color="secondary" size="small"
+(click)="editarRegistro(item)">
+<ion-icon size="small" slot="icon-only" name="create"></ion-icon>
+</ion-button>
+
+<ion-button shape="round" color="danger" size="small"
+(click)="removerRegistro(item.id)">
+<ion-icon size="small" slot="icon-only" name="trash"></ion-icon>
+</ion-button>
+
+
+
+</ion-card-content>
+</span>
+
+<ng-template #elseBlock>
+    <ion-card-header>
+      <ion-card-title>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              Editar
+            </ion-col>
+            <ion-col>
+              <ion-button fill="clear" color="medium" size="small" (click)="item.isEdit = false">
+                Cancelar
+              </ion-button>
+            </ion-col>
+            <ion-col>
+              <ion-button fill="outline" color="success" size="small" (click)="atualizarRegistro(item)">
+                Salvar                                                          
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label><strong>Nome</strong></ion-label>
+        <ion-input type="text" [(ngModel)]="item.EditNome"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label><strong>Idade</strong></ion-label>
+        <ion-input type="text" [(ngModel)]="item.EditIdade"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label><strong>Cidade</strong></ion-label>
+        <ion-input type="text" [(ngModel)]="item.EditCidade"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label><strong>E-mail</strong></ion-label>
+          <ion-input type="text" [(ngModel)]="item.EditEmail"></ion-input>
+      </ion-item>
+
+    </ion-card-content>
+
+</ng-template>
+</ion-card>
+
+
+
+</ion-content>
+
+
+
+
+
+
+  

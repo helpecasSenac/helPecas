@@ -33,31 +33,6 @@ export class EdicaoProdutoPage implements OnInit {
     });
     
   }
-
-  removerRegistro(rowID) {
-    console.log(rowID);
-    this.produtoSer.excluir(rowID);
-  }
-  
-  editarRegistro(record) {
-  
-    record.isEdit = true;
-    record.EditNome = record.nome;
-    record.EditIdade = record.idade;
-    record.EditCidade = record.cidade;
-    record.EditEmail = record.email;
-  
-  }
-  
-  atualizarRegistro(recordRow) {
-    let record = {};
-    record['nome'] = recordRow.EditNome;
-    record['idade'] = recordRow.EditIdade;
-    record['cidade'] = recordRow.EditCidade;
-    record['email'] = recordRow.EditEmail;
-    this.produtoSer.alterar(recordRow.id, record);
-    recordRow.isEdit = false;
-  }
 }
 
 

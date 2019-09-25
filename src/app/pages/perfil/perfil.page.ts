@@ -33,5 +33,32 @@ export class PerfilPage implements OnInit {
       console.log(this.fornecedores);
         });
   }
+
+  removerRegistro(rowID) {
+    console.log(rowID);
+    this.CliSer.excluir(rowID);
+  }
+  
+  editarRegistro(record) {
+  
+    record.isEdit = true;
+    record.EditCNPJ = record.CNPJ;
+    record.EditEnd = record.end;
+    record.EditNomeFant = record.nomeFant;
+    record.EditRazaoSoc = record.razaoSoc;
+    record.EditTel = record.tel;
+  
+  }
+  
+  atualizarRegistro(recordRow) {
+    let record = {};
+    record['nomeFant'] = recordRow.EditNomeFant;
+    record['CNPJ'] = recordRow.EditCNPJ;
+    record['end'] = recordRow.EditNomeFant;
+    record['razaoSoc'] = recordRow.EditRazaoSoc;
+    record['tel'] = recordRow.EditTel;
+    this.CliSer.alterar(recordRow.id, record);
+    recordRow.isEdit = false;
+  }
   
 }
