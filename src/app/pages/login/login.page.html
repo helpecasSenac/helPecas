@@ -1,62 +1,67 @@
-<ion-content class="swiper-no-swiping" padding center text-center>
+<ion-content class=swiper-no-swiping padding center text-center>
     <div class="container">
-        <ion-img src="assets/img/AppLogo.png"></ion-img>
-        <ion-segment (ionChange)="segmentChanged($event)">
-            <ion-segment-button value="login">
-                <ion-label>Login</ion-label>
-            </ion-segment-button>
-            <ion-segment-button value="cadastro">
-                <ion-label>Cadastro</ion-label>
-            </ion-segment-button>
-        </ion-segment>
+       <ion-img src="assets/img/AppLogo.png"></ion-img>
+       <ion-segment (ionChange)="segmentChanged($event)">
+          <ion-segment-button value="login">
+             <ion-label>Login</ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="cadastro">
+             <ion-label>Cadastro</ion-label>
+          </ion-segment-button>
+       </ion-segment>
     </div>
     <ion-slides>
-        <ion-slide class="slide1">
-            <ion-content padding center text-center class="slide1">
-                <ion-title>Faça Login</ion-title>
+       <ion-slide>
+          <ion-content padding center text-center>
+             <ion-title>Faça Login</ion-title>
                 <ion-list>
-                    <ion-item class=ion-margin-top lines="none">
-                        <ion-input placeholder="E-mail" type="email"></ion-input>
-                    </ion-item>
-                    <ion-item class=ion-margin-top lines="none">
-                        <ion-input placeholder="Senha" type="password"></ion-input>
-                    </ion-item>
+                   <ion-item class=ion-margin-top lines="none">
+                      <ion-input placeholder="E-mail" type="email" [(ngModel)]="userLogin.email" ></ion-input>
+                   </ion-item>
+                   <ion-item class=ion-margin-top lines="none">
+                      <ion-input placeholder="Senha" type="password" [(ngModel)]="userLogin.password"></ion-input>
+                   </ion-item>
                 </ion-list>
-                <ion-button class=ion-margin-top color=danger expand="full" (click)="entrar()" [routerLink]="['/pagina-inicial']">Entrar</ion-button>
+                <ion-button class=ion-margin-top color = danger expand="full" (click)="login()">Entrar</ion-button>
             </ion-content>
-        </ion-slide>
-        <ion-slide class="slide2">
-            <ion-list>
-                <ion-title>Cadastre-se</ion-title>
-                <ion-item class=ion-margin-top lines="none">
-                    <ion-input placeholder="E-mail" type="email"></ion-input>
-                </ion-item>
+       </ion-slide>
+       <ion-slide>
+             <ion-content padding center text-center>
+          <ion-list>
+             <ion-title>Cadastre-se</ion-title>
+             <ion-item class=ion-margin-top lines="none">
+                <ion-input placeholder="E-mail" type="email" [(ngModel)]="userRegister.email"></ion-input>
+             </ion-item>
+   
+             <ion-item class=ion-margin-top lines="none">
+                <ion-input placeholder="Senha" type="password" [(ngModel)]="userRegister.password"></ion-input>
+             </ion-item>
+   
+             <ion-item class=ion-margin-top lines="none">
+                <ion-input placeholder="CNPJ" type="rpassword"  [(ngModel)]="cnpj"></ion-input>
+             </ion-item>
+   
+             <ion-item class=ion-margin-top lines="none">
+                <ion-input placeholder="Nome Fantasia" type="text" [(ngModel)]="nomefant"></ion-input>
+             </ion-item>
 
-                <ion-item class=ion-margin-top lines="none">
-                    <ion-input placeholder="Senha" type="password"></ion-input>
-                </ion-item>
+             <ion-item class=ion-margin-top lines="none">
+                <ion-input placeholder="Razão Social" type="text" [(ngModel)]="razaosocial"></ion-input>
+             </ion-item>
+   
+             <ion-item class=ion-margin-top lines="none">
+                <ion-input placeholder="Endereço" type="text" [(ngModel)]="endereco"></ion-input>
+             </ion-item>
 
-                <ion-item class=ion-margin-top lines="none">
-                    <ion-input placeholder="Confirmação de Senha" type="rpassword"></ion-input>
-                </ion-item>
+   
+             <ion-item class=ion-margin-top lines="none">
+                <ion-input placeholder="Telefone" type="text" [(ngModel)]="telefone"></ion-input>
+             </ion-item>
 
-                <ion-item class=ion-margin-top lines="none">
-                    <ion-input placeholder="CNPJ" type="rpassword"></ion-input>
-                </ion-item>
+          </ion-list>
 
-                <ion-item class=ion-margin-top lines="none">
-                    <ion-input placeholder="Nome Fantasia" type="rpassword"></ion-input>
-                </ion-item>
-
-                <ion-item class=ion-margin-top lines="none">
-                    <ion-input placeholder="Endereço" type="rpassword"></ion-input>
-                </ion-item>
-
-                <ion-item class=ion-margin-top lines="none">
-                    <ion-input placeholder="Telefone" type="rpassword"></ion-input>
-                </ion-item>
-                <ion-button class=ion-margin-top color=danger expand="full">Cadastrar</ion-button>
-            </ion-list>
-        </ion-slide>
+             <ion-button class=ion-margin-top color = danger expand="full" (click)="register()">Cadastrar</ion-button>
+          </ion-content>
+       </ion-slide>
     </ion-slides>
-</ion-content>
+ </ion-content>
