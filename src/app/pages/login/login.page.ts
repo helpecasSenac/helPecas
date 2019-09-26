@@ -73,6 +73,8 @@ export class LoginPage implements OnInit {
       record['nomeFant'] = this.nomefant;
       record['razaoSoc'] = this.razaosocial;
       record['tel'] = this.telefone;
+      console.log(this.cnpj);
+      console.log(record);
     
       this.authService.criar(record).then(resp => {
       this.cnpj = "";
@@ -83,10 +85,10 @@ export class LoginPage implements OnInit {
       });
   
       this.presentToast(message);
-    }finally{
-      this.loading.dismiss();
-    }
-    this.loading.dismiss();
+      }finally{
+        this.loading.dismiss();
+      }
+        this.loading.dismiss();
   }
   
   async presentLoading() {

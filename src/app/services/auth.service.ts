@@ -13,28 +13,24 @@ export class AuthService {
     public firestore: AngularFirestore,
     private router:Router) { }
 
+  login(user: User) {
+    return this.afa.auth.signInWithEmailAndPassword(user.email, user.password);
+  }
 
-login(user: User) {
+  register(user: User ){
+    return this.afa.auth.createUserWithEmailAndPassword(user.email, user.password);
+  }
 
-  return this.afa.auth.signInWithEmailAndPassword(user.email, user.password);
-}
+  getAuth(){
+    return this.afa.auth;
+  }
 
-register(user: User ){
-return this.afa.auth.createUserWithEmailAndPassword(user.email, user.password);
-}
+  criar(record){
+    return this.firestore.collection('Clientes').add(record);
+  }
 
-getAuth(){
-return this.afa.auth;
-}
-
-criar(record){
-  return this.firestore.collection('Clientes').add(record);
-}
-
-signOut(): void {
-  this.afa.auth.signOut();
-  this.router.navigate(['/login'])
-}
-
-
+  signOut(): void {
+    this.afa.auth.signOut();
+    this.router.navigate(['/login'])
+  }
 }
